@@ -20,8 +20,8 @@ public class ClickableAreasImage implements PhotoViewAttacher.OnPhotoTapListener
 
     private List<ClickableArea> clickableAreas;
 
-    private int imageWidthInPx;
-    private int imageHeightInPx;
+    private int imageWidthInPx = 2688;
+    private int imageHeightInPx = 1376;
 
     public ClickableAreasImage(PhotoViewAttacher attacher, OnClickableAreaClickedListener listener){
         this.attacher = attacher;
@@ -30,7 +30,7 @@ public class ClickableAreasImage implements PhotoViewAttacher.OnPhotoTapListener
 
     private void init(OnClickableAreaClickedListener listener) {
         this.listener = listener;
-        getImageDimensions(attacher.getImageView());
+        //getImageDimensions(attacher.getImageView());
         attacher.setOnPhotoTapListener(this);
     }
 
