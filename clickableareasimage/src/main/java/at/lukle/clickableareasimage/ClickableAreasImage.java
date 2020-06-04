@@ -20,8 +20,8 @@ public class ClickableAreasImage implements PhotoViewAttacher.OnPhotoTapListener
 
     private List<ClickableArea> clickableAreas;
 
-    private int imageWidthInPx = 2688;
-    private int imageHeightInPx = 1376;
+    private int imageWidthInPx/* = 2688*/;
+    private int imageHeightInPx/* = 1376*/;
 
     public ClickableAreasImage(PhotoViewAttacher attacher, OnClickableAreaClickedListener listener){
         this.attacher = attacher;
@@ -36,8 +36,8 @@ public class ClickableAreasImage implements PhotoViewAttacher.OnPhotoTapListener
     }
 
     private void getImageDimensions(){
-        imageWidthInPx = 2688;
-        imageHeightInPx = 1376;
+        imageWidthInPx = 2688 / Resources.getSystem().getDisplayMetrics().density);
+        imageHeightInPx = 1376 / Resources.getSystem().getDisplayMetrics().density);
     }
     
     //private void getImageDimensions(ImageView imageView){
