@@ -36,8 +36,8 @@ public class ClickableAreasImage implements PhotoViewAttacher.OnPhotoTapListener
     }
 
     private void getImageDimensions(){
-        imageWidthInPx = 2688 / Resources.getSystem().getDisplayMetrics().density);
-        imageHeightInPx = 1376 / Resources.getSystem().getDisplayMetrics().density);
+        imageWidthInPx = (int) 2688 / Resources.getSystem().getDisplayMetrics().density);
+        imageHeightInPx = (int) 1376 / Resources.getSystem().getDisplayMetrics().density);
     }
     
     //private void getImageDimensions(ImageView imageView){
