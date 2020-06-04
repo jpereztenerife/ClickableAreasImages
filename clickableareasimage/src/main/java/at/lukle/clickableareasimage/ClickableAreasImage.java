@@ -31,6 +31,7 @@ public class ClickableAreasImage implements PhotoViewAttacher.OnPhotoTapListener
     private void init(OnClickableAreaClickedListener listener) {
         this.listener = listener;
         //getImageDimensions(attacher.getImageView());
+        getImageDimensions();
         attacher.setOnPhotoTapListener(this);
     }
 
