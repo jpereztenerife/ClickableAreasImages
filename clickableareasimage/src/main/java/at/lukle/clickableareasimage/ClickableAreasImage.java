@@ -56,6 +56,7 @@ public class ClickableAreasImage implements PhotoViewAttacher.OnPhotoTapListener
         }
     }
 
+
     private List<ClickableArea> getClickAbleAreas(int x, int y){
         List<ClickableArea> clickableAreas= new ArrayList<>();
         for(ClickableArea ca : getClickableAreas()){
